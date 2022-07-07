@@ -91,7 +91,7 @@ img {
 
 /* responsive */
 
-@media screen and (min-width: 270px) {
+@media screen and (max-width: 590px) and (min-width: 270px) {
 	img {
 		border-radius: 10px;
 	  }
@@ -107,12 +107,12 @@ img {
 	}
 
 	.cover p {
-		font-size: .5em;
+		font-size: .4em;
 		line-height: 1.8;
 	}
 	
 	.cover .title {
-		font-size: .8em;
+		font-size: .6em;
 		font-weight: bold;
 	}
 }

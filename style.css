@@ -147,9 +147,9 @@ span.psw {
 }
 
 
-@media screen and (min-width: 270px) {
+@media screen and (max-width: 590px) and (min-width: 270px) {
 	.card {
-		width: 130px;
+		width: 125px;
 		height: 150px;	
 	}
 
@@ -158,11 +158,11 @@ span.psw {
 	}
 
 	.card .content .details h1 {
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 
 	.card .content .details h2 {
-		font-size: 1.3em;
+		font-size: .8em;
 	}
 
 	.card .content .details span {
@@ -172,6 +172,7 @@ span.psw {
 	.card .content .details .actionBtn button {
 		font-size: .6em;
 		font-weight: 600;	
+		padding: 10px 20px;
 	}
 
 }
