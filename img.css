@@ -54,7 +54,7 @@ img {
 
   /* text */
 
-.grid-item > .cover {
+.grid-item .cover {
 	background-image: linear-gradient(to right, #ddd6f3 , #faaca8);
 	/* background: rgba(0, 0, 0, 0.6); */
 	top: 0;
@@ -89,7 +89,33 @@ img {
 	font-weight: bold;
 }
 
+/* responsive */
 
+@media screen and (min-width: 270px) {
+	img {
+		border-radius: 10px;
+	  }
+
+	  video {
+		border-radius: 10px;
+		width: 100%;
+		height: auto;
+	}
+
+	.grid-item .cover {
+		border-radius: 10px; 
+	}
+
+	.cover p {
+		font-size: .5em;
+		line-height: 1.8;
+	}
+	
+	.cover .title {
+		font-size: .8em;
+		font-weight: bold;
+	}
+}
 
 
 
