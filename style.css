@@ -191,15 +191,16 @@ span.psw {
 }
 
 .text > h1 {
-	font-family: 'CatholicSchoolGirls BB', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 4em;
-	line-height: 0.7;
+	line-height: 1;
 		
 }
 
 .text > h2 {	
 	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-	font-size: 1.5em;	
+	font-size: 2em;	
+	font-weight: bold;
 }
 
 .text p {

@@ -89,9 +89,10 @@ img {
 	font-weight: bold;
 }
 
+
 /* responsive */
 
-@media screen and (max-width: 590px) and (min-width: 270px) {
+@media screen and (max-width: 590px) and (min-width: 220px) {
 	img {
 		border-radius: 10px;
 	  }
