@@ -6,7 +6,9 @@
 }
 html,
 body {
-	background-image: linear-gradient(to right, #ffafbd , #ffc3a0);
+	/* background-image: linear-gradient(to right, #ffafbd , #ffc3a0); */
+	background: radial-gradient(#ffcaf1, #e4cfff);
+	/* background-color: #ffdde1; */
 }
 
 /* cover */
@@ -16,7 +18,7 @@ body {
 	height: 100%;
 	position: absolute;
 	z-index: 1;	
-	backdrop-filter: blur(20px);
+	backdrop-filter: blur(5px);
 	background-color: transparent;
 }
 
@@ -36,10 +38,10 @@ body {
 	height: 150px;
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(1.3px);
-	border: 1px solid rgba(255, 255, 255, 1);
+	border: 1px solid rgb(255, 192, 246);
 	border-radius: 20px;
 	transition: 0.5s;
-	background-color: #ffdde1;
+	background-color: transparent;
 	
 }
 
@@ -76,7 +78,8 @@ body {
 .card .content .details h1 {
 	font-size: 1.8em;
 	font-weight: 600;
-	color: #555;
+   	color: #e4cfff;
+  	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.785), 0px -1px 2px rgba(118, 118, 118, 0.7);
 	text-align: center;
 	margin-bottom: 50px;
 
@@ -84,13 +87,14 @@ body {
 
 .card .content .details h2 {
 	font-size: 1.5em;
-	color: #555;
+	color: #5d1991;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.785), 0px -1px 2px rgba(118, 118, 118, 0.7);
 	font-weight: 600;
 }
 
 .card .content .details span {
 	font-size: 1em;
-	color: #555;
+	color: #cf9bff;
 	font-weight: 600;
 }
 
@@ -105,10 +109,13 @@ body {
 	outline: none;
 	border-radius: 5px;
 	font-size: 1em;
-	font-weight: 500;
-	background-color: #ff5f95;
-	color: #fff;
+	font-weight: bolder;
+	background-color: transparent;
+	color: rgb(77, 0, 78);
 	cursor: pointer;
+	transform: rotate(-3deg);
+	box-shadow: -2px -2px 5px 0 rgb(255, 192, 230),2px 2px 5px 0 #3a0051a1;
+	
 }
 
 /* login form */
@@ -130,12 +137,44 @@ input[type=text], input[type=password] {
 
 
 button:hover {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 span.psw {
   float: right;
   padding-top: 16px;
+}
+
+/* Text */
+
+.text {	
+	padding-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 50vh;
+}
+
+.text > h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 4em;
+	line-height: 1;
+}
+
+.text > h2 {	
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+	font-size: 2em;	
+	font-weight: bold;
+}
+
+.text p {
+	font-size: 1em ;
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+	margin-top: 2%;
+	font-weight: bold;
+	
+	
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -149,13 +188,14 @@ span.psw {
 
 @media screen and (max-width: 590px) and (min-width: 270px) {
 	.card {
-		width: 125px;
+		width: 100px;
 		height: 150px;	
 	}
 
 	.card:hover {
-		height: 300px;
+		height: 270px;
 	}
+
 
 	.card .content .details h1 {
 		font-size: 1em;
@@ -175,42 +215,19 @@ span.psw {
 		padding: 10px 20px;
 	}
 
+	.text > h1 {
+		font-size: 2em;	
+	}
+
+	.text > h2 {	
+		font-size: 1em;	
+	}
+
 }
 
 
 
-/* Text */
 
-.text {	
-	padding-top: 60px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 50vh;
-}
-
-.text > h1 {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 4em;
-	line-height: 1;
-		
-}
-
-.text > h2 {	
-	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-	font-size: 2em;	
-	font-weight: bold;
-}
-
-.text p {
-	font-size: 1em ;
-	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-	margin-top: 2%;
-	font-weight: bold;
-	
-	
-}
 
 
 
