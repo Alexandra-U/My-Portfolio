@@ -186,7 +186,7 @@ span.psw {
 }
 
 
-@media screen and (min-width: 270px) {
+@media screen and (min-width: 270px) and (max-width: 1000px) {
 	.card {
 		width: 30vw;
 		height: 150px;	

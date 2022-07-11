@@ -97,7 +97,7 @@ video {
 
 
 
-@media screen and (min-width: 270px) {
+@media screen and (min-width: 270px) and (max-width: 1000px) {
 	.grid-item img {
 		border-radius: 8px;
 	  }
