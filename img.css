@@ -104,7 +104,7 @@ video {
 	  }
 
 	  video {
-		border-radius: 10px;
+		border-radius: 5px;
 		width: 100%;
 		height: auto;
 	}
@@ -114,16 +114,24 @@ video {
 	}
 
 	.cover p {
-		font-size: 1.5vw;
-		line-height: 1.4;
+		font-size: 2.5vw;
 		text-align: center;
+		line-height: 3.5vw;
 		margin-bottom: 0;
 	}
 	
 	.cover .title {
-		font-size: 2.5vw;
+		font-size: 3.5vw;
 		margin-bottom: 0;
 	}
+
+	/* grid */
+		
+	  .grid {
+		column-count: 2;
+		column-gap: 5px;
+	  }
+	
 
 	
 }

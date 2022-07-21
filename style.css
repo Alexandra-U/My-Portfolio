@@ -1,14 +1,12 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	
+	box-sizing: border-box;	
 }
+
 html,
 body {
-	/* background-image: linear-gradient(to right, #ffafbd , #ffc3a0); */
-	background: radial-gradient(#ffcaf1, #e4cfff);
-	/* background-color: #ffdde1; */
+	background: radial-gradient(#ddd6f3, #faaca8);
 }
 
 /* cover */
@@ -20,6 +18,7 @@ body {
 	z-index: 1;	
 	backdrop-filter: blur(5px);
 	background-color: transparent;
+	cursor: pointer;
 }
 
 .container {
@@ -30,25 +29,42 @@ body {
 	min-height: 100vh;	
 }
 
+.card-cvr {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgb(27, 27, 27, .5);
+	border-radius: 10px;
+}
+
+
 /* cards */
 
 .card {
 	position: relative;
-	width: 250px;
-	height: 150px;
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(1.3px);
-	border: 1px solid rgb(255, 192, 246);
-	border-radius: 20px;
+	width: 350px;
+	height: 350px;
+	box-shadow: 5px 5px 20px black;
+	border: none;
+	border-radius: 3px;
 	transition: 0.5s;
-	background-color: transparent;
-	
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
 }
 
-
-.card:hover {
-	height: 360px;
+.crd1 {
+	background-image: url(./img/3d/bakery.png);
 }
+
+.crd2 {
+	background-image: url(./img/photoshop/land.png);
+}
+
+.crd3 {
+	background-image: url(./img/illustrator/teddy.png);
+}
+
 
 
 .card .content {
@@ -57,93 +73,60 @@ body {
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
-	overflow: hidden;
-	
+	overflow: hidden;	
 }
+
+
 
 .card .content .data {
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 
-.card .content .details {
-	
+.card .content .details {	
 	text-align: center;
 	width: 100%;
 	height: 100%;
 	transition: 0.5s;
-	transform: translateY(100px);
+	transform: translateY(90%);
+}
+
+
+.card .content .details:hover {
+	transform: translateY(50%);
 }
 
 .card .content .details h1 {
 	font-size: 1.8em;
 	font-weight: 600;
-   	color: #e4cfff;
-  	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.785), 0px -1px 2px rgba(118, 118, 118, 0.7);
+   	color: #ffffff; 
 	text-align: center;
-	margin-bottom: 50px;
-
+	margin-bottom: 10%;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .card .content .details h2 {
 	font-size: 1.5em;
-	color: #5d1991;
-	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.785), 0px -1px 2px rgba(118, 118, 118, 0.7);
+	color: white;
 	font-weight: 600;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .card .content .details span {
 	font-size: 1em;
-	color: #cf9bff;
+	color: white;
 	font-weight: 600;
-}
-
-.card .content .details span {
 	font-weight: 400;
-	opacity: .5;
+	opacity: .7;
+	font-family: 'Quicksand', sans-serif;
 }
 
-.card .content .details .actionBtn button {
-	padding: 10px 40px;
-	border: none;
-	outline: none;
-	border-radius: 5px;
+
+.card .content .details .spn {
 	font-size: 1em;
-	font-weight: bolder;
-	background-color: transparent;
-	color: rgb(77, 0, 78);
-	cursor: pointer;
-	transform: rotate(-3deg);
-	box-shadow: -2px -2px 5px 0 rgb(255, 192, 230),2px 2px 5px 0 #3a0051a1;
-	
+	color: white;
+	opacity: 1;	
 }
 
-/* login form */
-
-
-input[type=text], input[type=password] {
-  width: 30%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  /* display: block; */
-
-  border: 0;
-  outline: 0;
-	border-bottom: 2px solid #f403575e;
-	font-size: 1.4rem;
-	color: #ff5f95;
-	background-color: transparent;
-}
-
-
-button:hover {
-  opacity: 0.5;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
 
 /* Text */
 
@@ -189,16 +172,21 @@ span.psw {
 @media screen and (min-width: 270px) and (max-width: 1000px) {
 	.card {
 		width: 30vw;
-		height: 150px;	
+		height: 30vw;	
 	}
 
-	.card:hover {
-		height: 270px;
+	.card .content .details {	
+		transform: translateY(80%);
+	}
+	
+	
+	.card .content .details:hover {
+		transform: translateY(10%);
 	}
 
 
 	.card .content .details h1 {
-		font-size: 1em;
+		font-size: .6em;
 	}
 
 	.card .content .details h2 {
@@ -209,11 +197,6 @@ span.psw {
 		font-size: .8em;
 	}
 
-	.card .content .details .actionBtn button {
-		font-size: .6em;
-		font-weight: 600;	
-		padding: 5px 10px;
-	}
 
 	.text > h1 {
 		font-size: 2em;	
