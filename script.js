@@ -12,18 +12,17 @@ document.querySelector(".crd3").onclick = function() {
 }
 
 
-
  let hideCover = document.querySelector(".cover");
  window.addEventListener("click", (e) => {
-        hideCover.remove(); 
+        hideCover.parentNode.removeChild(hideCover); 
         
-        
-        e.preventDefault();
-    
+        console.log(e);
  });
 
 
-  
+        
+ 
+
 
   
 
