@@ -58,7 +58,7 @@ video {
 .grid-item .cover {
 	/* background-image: linear-gradient(to right, #ddd6f3 , #faaca8); */
 	/* background: rgba(0, 0, 0, 0.6); */
-	background: radial-gradient(#76b2fe, #b69efe);
+	background: rgb(27, 27, 27, .5);
 	top: 0;
 	left: 0;
 	height: 100%;

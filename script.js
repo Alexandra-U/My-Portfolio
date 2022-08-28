@@ -19,6 +19,13 @@ document.querySelector(".crd3").onclick = function() {
         console.log(e);
  });
 
+ function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
+
+
+
 
         
  
