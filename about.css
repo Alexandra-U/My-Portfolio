@@ -2,20 +2,167 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;	
+    outline: 1px solid red;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+body {
+	background-color: #201625;
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  flex-wrap: wrap;
+
+	min-height: 100vh;
 }
 
-.profile img {
-    width: 50%;
+.content {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #201625;
+    display: block;
+    margin-top: -30px;
+    margin-left: 100%;
+    
 }
 
-.container p {
-    /* text-align: center; */
-    margin-right: 20vw;
+
+/* .card-container:not(:hover) .content {
+    transition: .5s;
+} */
+
+.content p {
+    text-align: left;
+    margin: 1.45vw;
+    
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container {
+	background-color: #1e182f;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+
+
+.card-container .round {
+  width: 40%;
+	border: 1px solid pink;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+
+ 
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+  }
+
+.social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+  }
+  
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 0.95em;
+    left: 0.96em;
+    transition: all 265ms ease-out;
+  }
+  
+.social-icons a {
+    display: inline-block;
+  }
+  
+.social-icons a:before {
+    content: " ";
+    width: 55px;
+    display: block;
+  }
+  
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+  }
+  
+  .social-icons a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #ff003c;
+    background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+  }
+
+
+.skills {
+	background-color: #231E39;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid pink;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+
+@media screen and (min-width: 270px) and (max-width: 1000px) {
+  .content {
+    display: none;   
+}
+
+.card-container {
+	background-color: #1e182f;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 330px;
+	max-width: 100%;
+	text-align: center;
+  overflow-wrap: hidden;
+}
+
 }

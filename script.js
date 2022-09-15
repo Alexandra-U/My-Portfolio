@@ -12,12 +12,12 @@ document.querySelector(".crd3").onclick = function() {
 }
 
 
- let hideCover = document.querySelector(".cover");
- window.addEventListener("click", (e) => {
-        hideCover.parentNode.removeChild(hideCover); 
+//  let hideCover = document.querySelector(".cover");
+//  window.addEventListener("click", (e) => {
+//         hideCover.parentNode.removeChild(hideCover); 
         
-        console.log(e);
- });
+//         console.log(e);
+//  });
 
  function myFunction() {
     var element = document.body;

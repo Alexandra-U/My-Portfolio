@@ -80,11 +80,11 @@ video {
 
 .cover:hover {
 	opacity: 1;
-	transition: 0.25s;
+	transition: .5s;
 }
 
 .cover p {
-	font-size: 1.3em;
+	font-size: 1em;
 	text-align: center;
 }
 
